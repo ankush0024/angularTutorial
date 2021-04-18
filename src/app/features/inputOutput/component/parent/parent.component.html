@@ -1,0 +1,8 @@
+<h1> parent</h1>
+
+<input  [(ngModel)]="Parentinput"/><br>
+parent data:-{{Parentinput}}<br>
+<button>parent submit</button>
+childGave{{childData}}
+<child [value1]="Parentinput" (sampleEvent)="parentFun($event);"></child>
+

@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RxjsRoutingModule } from './features/rxjs/rxjs-routing.module';
 import { viewChildModule } from './features/viewChild/viewChild.module';
 import { contentChildModule } from './features/contentChild/contentChild.module';
+import { inputOutputModule } from './features/inputOutput/inputOutput.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { contentChildModule } from './features/contentChild/contentChild.module'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule,FormsModule,ReactiveFormsModule/* ,RxjsRoutingModule */,/* viewChildModule, */contentChildModule
+    AppRoutingModule,HttpClientModule,FormsModule,ReactiveFormsModule/* ,RxjsRoutingModule */,/* viewChildModule, *//* contentChildModule */
+    inputOutputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
