@@ -1,0 +1,26 @@
+<br>
+<br>
+<input style="margin-left:2vh;" #search type="text" [(ngModel)]="searchKey"/>
+
+<br>
+<table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Type</th>
+        <th scope="col">Year</th>
+        <th scope="col">ImdbId</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of movieData;">
+        <td scope="row">{{i.Title}}</td>
+        <td>{{i.Type}}</td>
+        <td>{{i.Year}}</td>
+        <td>{{i.imdbID}}</td>
+      </tr>
+      <tr  *ngIf="status"><td colspan="4"><div class="spinner-border" role="status">
+        <span class="sr-on ly"></span>
+      </div></td></tr>
+    </tbody>
+  </table>
