@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { RxjsModule } from '../rxjs.module';
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class DataServiceService {
 
   constructor(private httpClient: HttpClient) { }

@@ -2,7 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { of, throwError } from 'rxjs';
 import { catchError, concatMap, delay, retryWhen, scan } from 'rxjs/operators';
-import { DataServiceService } from 'src/app/shared/data-service.service';
+import { DataServiceService } from '../../shared/data-service.service';
 //https://www.youtube.com/watch?v=_mb5rPtBoRg&t=248s
 @Component({
   selector: 'app-retry',

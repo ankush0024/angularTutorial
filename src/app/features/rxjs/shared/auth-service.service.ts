@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { delay, tap } from 'rxjs/operators';
+import { RxjsModule } from '../rxjs.module';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthServiceService {
 
   isUserLoggedIn: boolean = false;

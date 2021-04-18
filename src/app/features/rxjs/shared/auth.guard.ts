@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { RxjsModule } from '../rxjs.module';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+@Injectable()
 export class AuthGuard implements CanActivate {
   constructor(private route: Router) {
 
@@ -28,7 +28,7 @@ export class AuthGuard implements CanActivate {
 
   checkLogin(url: string):any {
     console.log("Url: " + url)
-    const val: string = localStorage.getItem('isUserLoggedIn');
+    const val: any = localStorage.getItem('isUserLoggedIn');
 
     if(val != null && val == "true"){
        if(url == "/login"){

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { from, fromEvent, interval, of, timer } from 'rxjs';
 import{toArray,map,pluck, filter, tap, take, takeLast, takeUntil, retry, delay} from 'rxjs/operators';
-import { DataServiceService } from 'src/app/shared/data-service.service';
+import { DataServiceService } from '../../shared/data-service.service';
 @Component({
   selector: 'app-comp1',
   templateUrl: './comp1.component.html',
